@@ -263,16 +263,21 @@ a:hover {
 
 .device-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.72fr);
+  grid-template-columns: minmax(0, 1fr) minmax(150px, 0.32fr);
   grid-template-areas:
-    "mac ipad"
-    "mac ios";
+    "mac ios"
+    "ipad ios";
   gap: 18px;
+  max-width: 1080px;
+  margin-inline: auto;
 }
 
 .device-shot {
   margin: 0;
   position: relative;
+  display: grid;
+  place-items: center;
+  min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 30px;
@@ -284,7 +289,7 @@ a:hover {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .device-shot figcaption {
@@ -303,7 +308,7 @@ a:hover {
 
 .mac-shot {
   grid-area: mac;
-  aspect-ratio: 1.43;
+  aspect-ratio: 1.71;
 }
 
 .ipad-shot {
@@ -313,11 +318,7 @@ a:hover {
 
 .ios-shot {
   grid-area: ios;
-  aspect-ratio: 1.44;
-}
-
-.ios-shot img {
-  object-position: center 18%;
+  aspect-ratio: 0.46;
 }
 
 .photo-story {
@@ -421,17 +422,22 @@ a:hover {
 }
 
 .map-image {
+  display: grid;
+  place-items: center;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 32px;
   background: var(--surface-strong);
   box-shadow: var(--shadow);
+  max-height: 460px;
 }
 
 .map-image img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 460px;
+  object-fit: contain;
 }
 
 .list {
@@ -514,6 +520,11 @@ a:hover {
       "mac"
       "ipad"
       "ios";
+  }
+
+  .ios-shot {
+    width: min(100%, 320px);
+    justify-self: center;
   }
 
   .hero {
