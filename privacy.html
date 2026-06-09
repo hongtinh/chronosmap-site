@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy - ChronosMap</title>
-  <meta name="description" content="Privacy Policy for ChronosMap.">
+  <meta name="description" content="Privacy Policy for ChronosMap." data-i18n-attr="content:privacy.meta.description">
   <link rel="stylesheet" href="site.css">
   <link rel="icon" href="assets/chronosmap-icon.png">
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body data-page="privacy">
   <div class="page">
     <header class="nav">
       <a class="brand" href="index.html" aria-label="ChronosMap home">
@@ -16,56 +17,55 @@
         <span>ChronosMap</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html">首页</a>
-        <a href="support.html">支持</a>
+        <a href="index.html" data-i18n="nav.home">首页</a>
+        <a href="support.html" data-i18n="nav.support">支持</a>
+        <label class="language-control">
+          <span class="sr-only" data-i18n="nav.language">语言</span>
+          <select class="language-select" data-language-select aria-label="Language"></select>
+        </label>
       </nav>
     </header>
 
     <main class="section policy">
-      <h1>隐私政策</h1>
-      <p>最后更新：2026 年 6 月 9 日</p>
-      <p>
+      <h1 data-i18n="privacy.title">隐私政策</h1>
+      <p data-i18n="privacy.updated">最后更新：2026 年 6 月 9 日</p>
+      <p data-i18n="privacy.intro">
         ChronosMap 尊重你的隐私。应用的核心功能围绕本地地图数据、用户选择的文件和用户选择的照片展开。我们不会建立用户账号，也不会主动收集、出售或共享个人数据。
       </p>
 
-      <h2>我们不收集的数据</h2>
+      <h2 data-i18n="privacy.noCollect.title">我们不收集的数据</h2>
       <ul>
-        <li>我们不收集你的姓名、邮箱、通讯录或精确位置历史。</li>
-        <li>我们不使用第三方广告 SDK。</li>
-        <li>我们不追踪你在应用中的浏览行为用于广告画像。</li>
+        <li data-i18n="privacy.noCollect.item1">我们不收集你的姓名、邮箱、通讯录或精确位置历史。</li>
+        <li data-i18n="privacy.noCollect.item2">我们不使用第三方广告 SDK。</li>
+        <li data-i18n="privacy.noCollect.item3">我们不追踪你在应用中的浏览行为用于广告画像。</li>
       </ul>
 
-      <h2>本地文件和照片</h2>
-      <p>
+      <h2 data-i18n="privacy.files.title">本地文件和照片</h2>
+      <p data-i18n="privacy.files.body">
         当你打开、保存或导入 ChronosMap 地图文件时，应用只会访问你明确选择的文件。导入照片生成轨迹点时，应用会读取你选择照片中的拍摄时间和地理位置信息，用于创建地图内容。照片和地图内容由你保存在本地设备或你选择的位置。
       </p>
 
-      <h2>地图服务</h2>
-      <p>
+      <h2 data-i18n="privacy.map.title">地图服务</h2>
+      <p data-i18n="privacy.map.body">
         ChronosMap 使用 Apple MapKit 显示地图。地图瓦片和基础地图服务由 Apple 提供，相关数据处理受 Apple 的隐私政策约束。
       </p>
 
-      <h2>数据分享</h2>
-      <p>
+      <h2 data-i18n="privacy.sharing.title">数据分享</h2>
+      <p data-i18n="privacy.sharing.body">
         你可以自行导出和分享 .chronosmap 文件或源数据包。导出文件中可能包含你添加的文字、图片、时间和地点信息，请在分享前确认内容适合公开。
       </p>
 
-      <h2>联系我们</h2>
+      <h2 data-i18n="privacy.contact.title">联系我们</h2>
       <p>
-        如果你对隐私政策有疑问，请通过 <a href="support.html">支持页面</a> 联系我们。
-      </p>
-
-      <h2>English Summary</h2>
-      <p>
-        ChronosMap does not create user accounts, does not use advertising SDKs, and does not sell personal data. The app works with files and photos you choose. Photo metadata may be read only to create map trajectory points. Map display uses Apple MapKit.
+        <span data-i18n="privacy.contact.body">如果你对隐私政策有疑问，请通过支持页面联系我们。</span>
       </p>
     </main>
 
     <footer class="footer">
       <strong>ChronosMap</strong>
       <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="support.html">Support</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
         <a href="https://github.com/hongtinh/chronosmap-site">GitHub</a>
       </div>
     </footer>
