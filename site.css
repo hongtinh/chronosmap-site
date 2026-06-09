@@ -249,6 +249,77 @@ a:hover {
     var(--surface);
 }
 
+.product-gallery {
+  padding-top: 38px;
+}
+
+.gallery-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.7fr);
+  gap: 28px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.device-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.72fr);
+  grid-template-areas:
+    "mac ipad"
+    "mac ios";
+  gap: 18px;
+}
+
+.device-shot {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow);
+}
+
+.device-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.device-shot figcaption {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  padding: 7px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 720;
+  backdrop-filter: blur(14px);
+}
+
+.mac-shot {
+  grid-area: mac;
+  aspect-ratio: 1.43;
+}
+
+.ipad-shot {
+  grid-area: ipad;
+  aspect-ratio: 1.44;
+}
+
+.ios-shot {
+  grid-area: ios;
+  aspect-ratio: 1.44;
+}
+
+.ios-shot img {
+  object-position: center 18%;
+}
+
 .photo-story {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.82fr);
@@ -432,8 +503,17 @@ a:hover {
 
   .hero,
   .showcase,
-  .photo-story {
+  .photo-story,
+  .gallery-heading,
+  .device-grid {
     grid-template-columns: 1fr;
+  }
+
+  .device-grid {
+    grid-template-areas:
+      "mac"
+      "ipad"
+      "ios";
   }
 
   .hero {

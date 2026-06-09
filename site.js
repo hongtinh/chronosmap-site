@@ -33,6 +33,14 @@ const en = {
   "home.feature.editor.body": "Create your own maps with people, events, trajectory points, images, and ChronosMap files.",
   "home.feature.photos.title": "Build personal routes from photos",
   "home.feature.photos.body": "Import travel or everyday photos and ChronosMap can read their capture time and location to create personal trajectory points.",
+  "home.gallery.title": "Explore the same time map on iPhone, iPad, and Mac.",
+  "home.gallery.lead": "From photo-based travel routes on your phone to broader map browsing and editing on iPad and Mac, ChronosMap keeps one consistent time-map experience across screens.",
+  "home.gallery.mac": "Mac",
+  "home.gallery.ipad": "iPad",
+  "home.gallery.ios": "iPhone",
+  "home.gallery.macAlt": "ChronosMap on Mac",
+  "home.gallery.ipadAlt": "ChronosMap on iPad",
+  "home.gallery.iosAlt": "ChronosMap on iPhone",
   "home.photos.title": "Turn your photo library into a travel map.",
   "home.photos.lead": "Choose photos with location metadata, and ChronosMap creates trajectory points from their real coordinates and capture times. Each photo becomes a memory node for trips, city walks, field work, or personal timelines.",
   "home.photos.point1": "Uses the actual location recorded in each photo and does not merge photos with different coordinates.",
@@ -43,7 +51,7 @@ const en = {
   "home.sample.point1": "Supports sample maps and user-created maps.",
   "home.sample.point2": "Open from files, save as, import source data, and export source data.",
   "home.sample.point3": "Map data stays local and is managed and shared by you.",
-  "home.sample.imageAlt": "Tang Chang'an map illustration",
+  "home.sample.imageAlt": "ChronosMap sample map on iPad",
   "privacy.page.title": "Privacy Policy - ChronosMap",
   "privacy.meta.description": "Privacy Policy for ChronosMap.",
   "privacy.title": "Privacy Policy",
@@ -641,6 +649,84 @@ Object.assign(translations.ru, {
   "support.appStore.body": "ChronosMap планируется как приложение с разовой покупкой. Ссылка App Store будет добавлена после релиза.",
 });
 
+Object.assign(translations["zh-Hans"], {
+  "home.gallery.title": "在 iPhone、iPad 和 Mac 上探索同一张时间地图。",
+  "home.gallery.lead": "从手机上的旅行照片轨迹，到 iPad 和 Mac 上更宽阔的地图浏览与编辑，ChronosMap 为不同屏幕提供一致的时间地图体验。",
+  "home.gallery.mac": "Mac",
+  "home.gallery.ipad": "iPad",
+  "home.gallery.ios": "iPhone",
+  "home.gallery.macAlt": "Mac 上的 ChronosMap",
+  "home.gallery.ipadAlt": "iPad 上的 ChronosMap",
+  "home.gallery.iosAlt": "iPhone 上的 ChronosMap",
+  "home.sample.imageAlt": "iPad 上的 ChronosMap 示例地图",
+});
+
+Object.assign(translations["zh-Hant"], {
+  "home.gallery.title": "在 iPhone、iPad 和 Mac 上探索同一張時間地圖。",
+  "home.gallery.lead": "從手機上的旅行照片軌跡，到 iPad 和 Mac 上更寬闊的地圖瀏覽與編輯，ChronosMap 為不同螢幕提供一致的時間地圖體驗。",
+  "home.gallery.mac": "Mac",
+  "home.gallery.ipad": "iPad",
+  "home.gallery.ios": "iPhone",
+  "home.gallery.macAlt": "Mac 上的 ChronosMap",
+  "home.gallery.ipadAlt": "iPad 上的 ChronosMap",
+  "home.gallery.iosAlt": "iPhone 上的 ChronosMap",
+  "home.sample.imageAlt": "iPad 上的 ChronosMap 示例地圖",
+});
+
+Object.assign(translations.es, {
+  "home.gallery.title": "Explora el mismo mapa temporal en iPhone, iPad y Mac.",
+  "home.gallery.lead": "Desde rutas de viaje con fotos en el teléfono hasta exploración y edición amplias en iPad y Mac, ChronosMap mantiene una experiencia coherente.",
+  "home.gallery.macAlt": "ChronosMap en Mac",
+  "home.gallery.ipadAlt": "ChronosMap en iPad",
+  "home.gallery.iosAlt": "ChronosMap en iPhone",
+  "home.sample.imageAlt": "Mapa de ejemplo de ChronosMap en iPad",
+});
+
+Object.assign(translations.ja, {
+  "home.gallery.title": "iPhone、iPad、Mac で同じ時間地図を探索。",
+  "home.gallery.lead": "iPhone の写真ベースの旅程から、iPad と Mac の広い地図閲覧・編集まで、一貫した体験を提供します。",
+  "home.gallery.macAlt": "Mac 上の ChronosMap",
+  "home.gallery.ipadAlt": "iPad 上の ChronosMap",
+  "home.gallery.iosAlt": "iPhone 上の ChronosMap",
+  "home.sample.imageAlt": "iPad 上の ChronosMap サンプル地図",
+});
+
+Object.assign(translations.ko, {
+  "home.gallery.title": "iPhone, iPad, Mac에서 같은 시간 지도를 탐색하세요.",
+  "home.gallery.lead": "휴대폰의 사진 기반 여행 경로부터 iPad와 Mac의 넓은 지도 탐색과 편집까지 일관된 경험을 제공합니다.",
+  "home.gallery.macAlt": "Mac의 ChronosMap",
+  "home.gallery.ipadAlt": "iPad의 ChronosMap",
+  "home.gallery.iosAlt": "iPhone의 ChronosMap",
+  "home.sample.imageAlt": "iPad의 ChronosMap 예시 지도",
+});
+
+Object.assign(translations.de, {
+  "home.gallery.title": "Dieselbe Zeitkarte auf iPhone, iPad und Mac.",
+  "home.gallery.lead": "Von Fotoreiserouten auf dem Telefon bis zur breiten Kartenansicht und Bearbeitung auf iPad und Mac bleibt die Erfahrung konsistent.",
+  "home.gallery.macAlt": "ChronosMap auf dem Mac",
+  "home.gallery.ipadAlt": "ChronosMap auf dem iPad",
+  "home.gallery.iosAlt": "ChronosMap auf dem iPhone",
+  "home.sample.imageAlt": "ChronosMap Beispielkarte auf dem iPad",
+});
+
+Object.assign(translations.fr, {
+  "home.gallery.title": "Explorez la même carte temporelle sur iPhone, iPad et Mac.",
+  "home.gallery.lead": "Des trajets photo sur téléphone à la navigation et l'édition plus larges sur iPad et Mac, ChronosMap garde une expérience cohérente.",
+  "home.gallery.macAlt": "ChronosMap sur Mac",
+  "home.gallery.ipadAlt": "ChronosMap sur iPad",
+  "home.gallery.iosAlt": "ChronosMap sur iPhone",
+  "home.sample.imageAlt": "Carte d'exemple ChronosMap sur iPad",
+});
+
+Object.assign(translations.ru, {
+  "home.gallery.title": "Одна временная карта на iPhone, iPad и Mac.",
+  "home.gallery.lead": "От маршрутов по фотографиям на телефоне до широкого просмотра и редактирования на iPad и Mac — ChronosMap сохраняет единый опыт.",
+  "home.gallery.macAlt": "ChronosMap на Mac",
+  "home.gallery.ipadAlt": "ChronosMap на iPad",
+  "home.gallery.iosAlt": "ChronosMap на iPhone",
+  "home.sample.imageAlt": "Пример карты ChronosMap на iPad",
+});
+
 function detectLanguage() {
   const saved = localStorage.getItem("chronosmap.site.language");
   if (saved && translations[saved]) return saved;
@@ -680,6 +766,11 @@ function applyLanguage(language) {
 
   document.querySelectorAll("[data-language-select]").forEach((select) => {
     select.value = language;
+  });
+
+  const screenshotLocale = language === "zh-Hans" || language === "zh-Hant" ? "zh" : "en";
+  document.querySelectorAll("[data-shot]").forEach((image) => {
+    image.src = `assets/${image.dataset.shot}_${screenshotLocale}.png`;
   });
 
   localStorage.setItem("chronosmap.site.language", language);
