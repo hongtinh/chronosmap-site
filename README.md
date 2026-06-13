@@ -9,3 +9,8 @@ Publish from the `main` branch root:
 - Home: `https://hongtinh.github.io/chronosmap-site/`
 - Privacy Policy: `https://hongtinh.github.io/chronosmap-site/privacy.html`
 - Support: `https://hongtinh.github.io/chronosmap-site/support.html`
+
+## App Store Connect
+
+- Privacy Policy URL: `https://hongtinh.github.io/chronosmap-site/privacy.html`
+- Support email: `chronosmap@gmail.com`
