@@ -82,7 +82,8 @@ const en = {
   "support.faq.data": "Is my data uploaded? ChronosMap mainly uses local files and local map data. Exported files are saved and shared by you.",
   "support.faq.platforms": "Which platforms are supported? ChronosMap is built for iPhone, iPad, and Mac.",
   "support.appStore.title": "App Store information",
-  "support.appStore.body": "ChronosMap is planned as a one-time purchase app. This page will add the App Store link after release.",
+  "support.appStore.body": "ChronosMap is now available on the App Store for iPhone, iPad, and Mac as a one-time purchase.",
+  "support.appStore.open": "Download on the App Store",
 };
 
 const translations = {
@@ -152,7 +153,8 @@ const translations = {
     "support.faq.data": "数据会上传吗？ChronosMap 主要使用本地文件和本地地图数据；你导出的文件由你自己保存和分享。",
     "support.faq.platforms": "支持哪些平台？ChronosMap 面向 iPhone、iPad 和 Mac。",
     "support.appStore.title": "App Store 信息",
-    "support.appStore.body": "ChronosMap 计划采用一次性购买模式。上线后，此页面会补充 App Store 下载链接。",
+    "support.appStore.body": "ChronosMap 已在 App Store 上架，支持 iPhone、iPad 和 Mac，采用一次性购买。",
+    "support.appStore.open": "在 App Store 下载",
   },
   "zh-Hant": {
     ...en,
@@ -219,7 +221,8 @@ const translations = {
     "support.faq.data": "資料會上傳嗎？ChronosMap 主要使用本機檔案和本機地圖資料；匯出的檔案由你自行保存和分享。",
     "support.faq.platforms": "支援哪些平台？ChronosMap 面向 iPhone、iPad 和 Mac。",
     "support.appStore.title": "App Store 資訊",
-    "support.appStore.body": "ChronosMap 計畫採用一次性購買模式。上線後，此頁面會補充 App Store 下載連結。",
+    "support.appStore.body": "ChronosMap 已在 App Store 上架，支援 iPhone、iPad 和 Mac，採用一次性購買。",
+    "support.appStore.open": "在 App Store 下載",
   },
 };
 
@@ -396,7 +399,8 @@ Object.assign(translations.es, {
   "support.faq.data": "¿Se suben mis datos? ChronosMap usa principalmente archivos locales; tú guardas y compartes los archivos exportados.",
   "support.faq.platforms": "¿Qué plataformas admite? ChronosMap está hecho para iPhone, iPad y Mac.",
   "support.appStore.title": "Información de App Store",
-  "support.appStore.body": "ChronosMap está previsto como app de compra única. Añadiremos el enlace de App Store tras el lanzamiento.",
+  "support.appStore.body": "ChronosMap ya está disponible en App Store para iPhone, iPad y Mac como compra única.",
+  "support.appStore.open": "Descargar en App Store",
 });
 
 Object.assign(translations.ja, {
@@ -446,7 +450,8 @@ Object.assign(translations.ja, {
   "support.faq.data": "データはアップロードされますか？主にローカルファイルを使用し、書き出しファイルはあなたが保存、共有します。",
   "support.faq.platforms": "対応プラットフォームは？iPhone、iPad、Mac に対応します。",
   "support.appStore.title": "App Store 情報",
-  "support.appStore.body": "ChronosMap は買い切りアプリとして提供予定です。公開後に App Store リンクを追加します。",
+  "support.appStore.body": "ChronosMap は iPhone、iPad、Mac 向けの買い切りアプリとして App Store で公開されています。",
+  "support.appStore.open": "App Store でダウンロード",
 });
 
 Object.assign(translations.ko, {
@@ -496,7 +501,8 @@ Object.assign(translations.ko, {
   "support.faq.data": "데이터가 업로드되나요? ChronosMap은 주로 로컬 파일을 사용하며 내보낸 파일은 사용자가 저장하고 공유합니다.",
   "support.faq.platforms": "지원 플랫폼은? ChronosMap은 iPhone, iPad, Mac용입니다.",
   "support.appStore.title": "App Store 정보",
-  "support.appStore.body": "ChronosMap은 일회성 구매 앱으로 제공될 예정입니다. 출시 후 App Store 링크를 추가합니다.",
+  "support.appStore.body": "ChronosMap은 iPhone, iPad, Mac용 일회성 구매 앱으로 App Store에서 제공됩니다.",
+  "support.appStore.open": "App Store에서 다운로드",
 });
 
 Object.assign(translations.de, {
@@ -546,7 +552,8 @@ Object.assign(translations.de, {
   "support.faq.data": "Werden meine Daten hochgeladen? ChronosMap nutzt vor allem lokale Dateien; exportierte Dateien speicherst und teilst du selbst.",
   "support.faq.platforms": "Welche Plattformen werden unterstützt? ChronosMap ist für iPhone, iPad und Mac.",
   "support.appStore.title": "App Store Informationen",
-  "support.appStore.body": "ChronosMap ist als Einmalkauf-App geplant. Nach Veröffentlichung ergänzen wir den App Store Link.",
+  "support.appStore.body": "ChronosMap ist jetzt im App Store für iPhone, iPad und Mac als Einmalkauf verfügbar.",
+  "support.appStore.open": "Im App Store laden",
 });
 
 Object.assign(translations.fr, {
@@ -596,7 +603,8 @@ Object.assign(translations.fr, {
   "support.faq.data": "Mes données sont-elles téléversées ? ChronosMap utilise surtout des fichiers locaux ; vous enregistrez et partagez les exports.",
   "support.faq.platforms": "Quelles plateformes ? ChronosMap est conçu pour iPhone, iPad et Mac.",
   "support.appStore.title": "Informations App Store",
-  "support.appStore.body": "ChronosMap est prévu comme app à achat unique. Le lien App Store sera ajouté après la sortie.",
+  "support.appStore.body": "ChronosMap est maintenant disponible sur l’App Store pour iPhone, iPad et Mac en achat unique.",
+  "support.appStore.open": "Télécharger sur l’App Store",
 });
 
 Object.assign(translations.ru, {
@@ -646,7 +654,8 @@ Object.assign(translations.ru, {
   "support.faq.data": "Загружаются ли данные? ChronosMap в основном использует локальные файлы; экспорт сохраняете и отправляете вы.",
   "support.faq.platforms": "Какие платформы поддерживаются? ChronosMap создан для iPhone, iPad и Mac.",
   "support.appStore.title": "Информация App Store",
-  "support.appStore.body": "ChronosMap планируется как приложение с разовой покупкой. Ссылка App Store будет добавлена после релиза.",
+  "support.appStore.body": "ChronosMap уже доступен в App Store для iPhone, iPad и Mac как приложение с разовой покупкой.",
+  "support.appStore.open": "Скачать в App Store",
 });
 
 Object.assign(translations["zh-Hans"], {

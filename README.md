@@ -13,4 +13,4 @@ Publish from the `main` branch root:
 ## App Store Connect
 
 - Privacy Policy URL: `https://hongtinh.github.io/chronosmap-site/privacy.html`
-- Support email: `chronosmap@gmail.com`
+- Support email: `readlife@gmail.com`
