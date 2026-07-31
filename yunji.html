@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>document.documentElement.className+=" js";</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="yunji.page.title">yunji — turn your photos into a living travel map</title>
+  <meta name="description" content="yunji is a travel journal that turns your photos into a living, scrubbable travel map.">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="assets/yunji-icon.png">
+  <script src="site.js" defer></script>
+  <script src="studio-i18n.js" defer></script>
+  <script src="reveal.js" defer></script>
+</head>
+<body data-page="yunji">
+  <div class="page">
+    <header class="nav">
+      <a class="brand" href="index.html" aria-label="VividMap home">
+        <span class="studio-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 7 L16 26 L27 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="26" r="2.6" fill="var(--blue)"/></svg></span>
+        <span>VividMap</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="chronosmap.html">ChronosMap</a>
+        <a href="yunji.html" data-i18n="brand.yunji">yunji</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <label class="language-control">
+          <span class="sr-only" data-i18n="nav.language">Language</span>
+          <select class="language-select" data-language-select aria-label="Language"></select>
+        </label>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1 class="reveal" data-i18n="yunji.hero.title">Turn your photos into a living travel map.</h1>
+          <p class="reveal" data-i18n="yunji.hero.body">yunji is a travel journal for iPhone and iPad. Import your photos and it reads their time and place, then draws your journey as a route that you can scrub through, day by day.</p>
+          <div class="actions reveal">
+            <span class="button primary" data-i18n="yunji.hero.soon">Coming to the App Store</span>
+            <a class="button secondary" href="support.html" data-i18n="yunji.hero.support">Get support</a>
+          </div>
+        </div>
+        <div class="hero-card reveal" aria-label="yunji app icon">
+          <div class="icon-stage">
+            <img src="assets/yunji-icon.png" alt="yunji app icon" data-i18n-attr="alt:yunji.icon.alt">
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <h2 class="reveal" data-i18n="yunji.features.title">Made for the way you actually travel.</h2>
+        <p class="section-lead reveal" data-i18n="yunji.features.lead">A map, a journal and your photos — kept in step with time.</p>
+        <div class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+          <article class="card reveal">
+            <h3 data-i18n="yunji.feature.timemap.title">A route that thins with time</h3>
+            <p data-i18n="yunji.feature.timemap.body">Each trip is one line that tapers from start to now. Scrub the timeline and the route redraws; revisits to the same place stay readable.</p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="yunji.feature.journal.title">A journal you swipe through</h3>
+            <p data-i18n="yunji.feature.journal.body">Card-style trips, calendar dots that jump to a day, and full-page footstep cards — photo, time, place and note, each in its place.</p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="yunji.feature.stats.title">Your year, gently measured</h3>
+            <p data-i18n="yunji.feature.stats.body">An activity heatmap, travel days per month and a year in review turn your habits into quiet, honest cards.</p>
+          </article>
+          <article class="card card-accent reveal">
+            <h3 data-i18n="yunji.feature.import.title">Import once, details fall into place</h3>
+            <p data-i18n="yunji.feature.import.body">Capture time and GPS become each footstep's fixed reference; everything syncs privately over iCloud between your devices.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section product-gallery">
+        <div class="gallery-heading">
+          <h2 class="reveal" data-i18n="yunji.gallery.title">One journal, from the first photo to the last.</h2>
+          <p class="section-lead reveal" data-i18n="yunji.gallery.lead">From a single tap on the map to a full-page footstep, yunji keeps every memory one swipe away.</p>
+        </div>
+        <div class="device-row">
+          <figure class="device-shot reveal">
+            <img src="assets/yunji-map.png" alt="yunji time map" data-i18n-attr="alt:yunji.gallery.mapAlt" loading="lazy" decoding="async">
+            <figcaption data-i18n="yunji.gallery.map">Time map</figcaption>
+          </figure>
+          <figure class="device-shot reveal">
+            <img src="assets/yunji-trips.png" alt="yunji trip list" data-i18n-attr="alt:yunji.gallery.tripsAlt" loading="lazy" decoding="async">
+            <figcaption data-i18n="yunji.gallery.trips">Trips</figcaption>
+          </figure>
+          <figure class="device-shot reveal">
+            <img src="assets/yunji-footstep.png" alt="yunji footstep detail" data-i18n-attr="alt:yunji.gallery.footstepAlt" loading="lazy" decoding="async">
+            <figcaption data-i18n="yunji.gallery.footstep">Footstep</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section photo-story">
+        <div class="photo-copy">
+          <h2 class="reveal" data-i18n="yunji.photos.title">Your camera roll, as a map.</h2>
+          <p class="section-lead reveal" data-i18n="yunji.photos.lead">Pick photos with location and yunji builds trajectory points from their real coordinates and capture times — a memory node for every stop.</p>
+          <ul class="list">
+            <li class="reveal" data-i18n="yunji.photos.point1">Uses each photo's real location; photos with different coordinates are never merged.</li>
+            <li class="reveal" data-i18n="yunji.photos.point2">Photos live inside the footstep, so a tap opens the full image and note.</li>
+            <li class="reveal" data-i18n="yunji.photos.point3">Your photos are chosen and kept by you — for a private journal or a shared story.</li>
+          </ul>
+        </div>
+        <div class="journey-visual reveal" aria-label="Photo journey illustration">
+          <div class="phone-frame">
+            <div class="photo-tile tile-one"></div>
+            <div class="photo-tile tile-two"></div>
+            <div class="photo-tile tile-three"></div>
+            <svg class="route-line" viewBox="0 0 260 420" aria-hidden="true">
+              <path d="M64 342 C110 302 62 236 132 206 C197 178 148 110 202 70" />
+              <circle cx="64" cy="342" r="9" />
+              <circle cx="132" cy="206" r="9" />
+              <circle cx="202" cy="70" r="9" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section showcase">
+        <div>
+          <h2 class="reveal" data-i18n="yunji.showcase.title">Local time, shown the way you lived it.</h2>
+          <p class="section-lead reveal" data-i18n="yunji.showcase.lead">yunji stores the capture timezone, so a 1 a.m. photo in Tokyo stays on Tokyo's day — wherever you read it later.</p>
+        </div>
+        <div class="map-image reveal">
+          <img src="assets/yunji-detail.png" alt="yunji footstep with local time and map" data-i18n-attr="alt:yunji.showcase.imageAlt" loading="lazy" decoding="async">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>VividMap</strong>
+      <div class="footer-links">
+        <a href="chronosmap.html">ChronosMap</a>
+        <a href="yunji.html" data-i18n="brand.yunji">yunji</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+      </div>
+      <a class="icp-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">沪ICP备2026029862号-1A</a>
+    </footer>
+  </div>
+</body>
+</html>

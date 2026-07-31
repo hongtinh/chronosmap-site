@@ -566,3 +566,190 @@ a:hover {
     font-size: 3.1rem;
   }
 }
+
+/* ============================================================
+   VividMap 合并站：工作室首页 / 云迹页 / 滚动显现 / 微交互
+   （沿用 ChronosMap 的浅色蓝调语言，仅在其上扩展）
+   ============================================================ */
+
+/* 工作室标记（V 字 + 节点） */
+.studio-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  color: var(--text);
+}
+.studio-mark svg { width: 100%; height: 100%; display: block; }
+.brand:hover .studio-mark { color: var(--blue-strong); }
+
+.nav.scrolled {
+  background: rgba(247, 251, 255, 0.82);
+  box-shadow: 0 1px 0 var(--line);
+}
+
+/* 滚动显现（渐进增强：无 JS 时内容默认可见） */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s var(--ease, ease), transform 0.7s var(--ease, ease);
+}
+.js .reveal.in { opacity: 1; transform: none; }
+
+/* 工作室首页 hero 视觉：双图标漂浮 + 漂浮地名胶囊 */
+.studio-hero-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 380px;
+}
+.app-icons {
+  position: relative;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  padding: 30px 34px;
+  border: 1px solid var(--line);
+  border-radius: 34px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.6));
+  box-shadow: var(--shadow);
+}
+.app-icons img {
+  width: 116px;
+  height: 116px;
+  border-radius: 25%;
+  filter: drop-shadow(0 18px 24px rgba(17,104,184,0.22));
+  transition: transform 0.4s var(--ease, ease);
+}
+.app-icons img:first-child { transform: rotate(-5deg); }
+.app-icons img:last-child { transform: rotate(5deg) translateY(8px); }
+.app-icons:hover img:first-child { transform: rotate(-2deg) translateY(-6px); }
+.app-icons:hover img:last-child { transform: rotate(2deg) translateY(2px); }
+.icon-amp {
+  font-family: var(--display, inherit);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+.float-chip {
+  position: absolute;
+  z-index: 3;
+  padding: 8px 15px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 12px 26px rgba(38,113,184,0.16);
+  font-size: 0.85rem;
+  font-weight: 720;
+  color: var(--text);
+  white-space: nowrap;
+  animation: floaty 6s ease-in-out infinite;
+}
+.float-chip::before {
+  content: "";
+  display: inline-block;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+  background: var(--c, var(--blue));
+}
+.chip-1 { --c: var(--blue); top: 4%; left: -6%; }
+.chip-2 { --c: var(--blue-strong); bottom: 8%; right: -8%; animation-delay: 1.4s; }
+.chip-3 { --c: #ffcf5c; top: 40%; left: -12%; animation-delay: 2.6s; }
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* 门户卡（首页双 App 入口） */
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+.portal-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 16px 42px rgba(38,113,184,0.09);
+  transition: transform 0.35s var(--ease, ease), box-shadow 0.35s var(--ease, ease);
+}
+.portal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 56px rgba(38,113,184,0.16);
+}
+.portal-card.accent {
+  background: linear-gradient(135deg, rgba(17,136,242,0.12), rgba(255,255,255,0.78)), var(--surface);
+}
+.portal-head { display: flex; align-items: center; gap: 14px; }
+.portal-head img {
+  width: 58px; height: 58px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(17,136,242,0.2);
+}
+.portal-name { font-size: 1.5rem; font-weight: 760; }
+.portal-tagline { margin: 0; color: var(--muted); }
+.portal-shot {
+  margin: 4px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255,255,255,0.7);
+}
+.portal-shot img { display: block; width: 100%; aspect-ratio: 1.5; object-fit: cover; object-position: top; }
+.portal-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; }
+
+/* 价值卡 */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.value-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 16px 42px rgba(38,113,184,0.09);
+}
+.value-card .vmark {
+  display: inline-grid;
+  place-items: center;
+  width: 40px; height: 40px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: var(--blue-soft);
+  color: var(--blue-strong);
+  font-weight: 800;
+}
+.value-card p { margin: 0; color: var(--muted); }
+
+/* 云迹页设备行（三张 iPhone 截图） */
+.device-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 760px;
+  margin-inline: auto;
+}
+.device-row .device-shot { aspect-ratio: 0.47; }
+.device-row .device-shot img { object-fit: cover; object-position: top; }
+
+/* 云迹 hero 图标舞台复用 chronosmap .icon-stage，仅换图 */
+
+@media (max-width: 820px) {
+  .portal-grid, .values-grid, .device-row { grid-template-columns: 1fr; }
+  .device-row { max-width: 320px; }
+  .studio-hero-visual { min-height: 300px; }
+  .app-icons img { width: 92px; height: 92px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; }
+  .float-chip { animation: none; }
+}

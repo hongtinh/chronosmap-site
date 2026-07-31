@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>document.documentElement.className+=" js";</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="home.page.title">ChronosMap - A map for time and place</title>
+  <meta name="description" content="ChronosMap helps you explore people, events, photos, and movement over time on an interactive map." data-i18n-attr="content:meta.description">
+  <link rel="stylesheet" href="site.css">
+  <link rel="icon" href="assets/chronosmap-icon.png">
+  <script src="site.js" defer></script>
+  <script src="studio-i18n.js" defer></script>
+  <script src="reveal.js" defer></script>
+</head>
+<body data-page="home">
+  <div class="page">
+    <header class="nav">
+      <a class="brand" href="index.html" aria-label="VividMap home">
+        <span class="studio-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 7 L16 26 L27 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="26" r="2.6" fill="var(--blue)"/></svg></span>
+        <span>VividMap</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="chronosmap.html">ChronosMap</a>
+        <a href="yunji.html" data-i18n="brand.yunji">yunji</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+        <label class="language-control">
+          <span class="sr-only" data-i18n="nav.language">Language</span>
+          <select class="language-select" data-language-select aria-label="Language"></select>
+        </label>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1 class="reveal" data-i18n="home.hero.title">Read time on a map.</h1>
+          <p class="reveal" data-i18n="home.hero.body">ChronosMap is a time map app for iPhone, iPad, and Mac. It brings people, events, places, photos, and routes into one map and timeline, helping you understand stories through both space and time.</p>
+          <div class="actions reveal">
+            <a class="button primary" href="https://apps.apple.com/us/app/chronosmap/id6778398973" data-i18n="support.appStore.open">Download on the App Store</a>
+            <a class="button secondary" href="support.html" data-i18n="home.hero.support">Get support</a>
+          </div>
+        </div>
+        <div class="hero-card reveal" aria-label="ChronosMap app icon">
+          <div class="icon-stage">
+            <img src="assets/chronosmap-icon.png" alt="ChronosMap app icon" data-i18n-attr="alt:home.icon.alt">
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <h2 class="reveal" data-i18n="home.features.title">Designed for history, people, and personal journeys.</h2>
+        <p class="section-lead reveal" data-i18n="home.features.lead">Open sample maps, import map packages, edit your own maps, and explore data with timelines, geo lenses, and density layers.</p>
+        <div class="grid">
+          <article class="card reveal">
+            <h3 data-i18n="home.feature.timeline.title">Timeline browsing</h3>
+            <p data-i18n="home.feature.timeline.body">View events and person locations by year, date, or hour, and jump to real moments in the data.</p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="home.feature.lens.title">Geo lens</h3>
+            <p data-i18n="home.feature.lens.body">Select an area on the map and see the events and trajectory points that happened there.</p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="home.feature.editor.title">Map editing</h3>
+            <p data-i18n="home.feature.editor.body">Create your own maps with people, events, trajectory points, images, and ChronosMap files.</p>
+          </article>
+          <article class="card card-accent reveal">
+            <h3 data-i18n="home.feature.photos.title">Build personal routes from photos</h3>
+            <p data-i18n="home.feature.photos.body">Import travel or everyday photos and ChronosMap can read their capture time and location to create personal trajectory points.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section product-gallery">
+        <div class="gallery-heading">
+          <h2 class="reveal" data-i18n="home.gallery.title">Explore the same time map on iPhone, iPad, and Mac.</h2>
+          <p class="section-lead reveal" data-i18n="home.gallery.lead">From photo-based travel routes on your phone to broader map browsing and editing on iPad and Mac, ChronosMap keeps one consistent time-map experience across screens.</p>
+        </div>
+        <div class="device-grid">
+          <figure class="device-shot mac-shot reveal">
+            <img src="assets/mac_en.png" alt="ChronosMap on Mac" data-shot="mac" data-i18n-attr="alt:home.gallery.macAlt" loading="lazy" decoding="async">
+            <figcaption data-i18n="home.gallery.mac">Mac</figcaption>
+          </figure>
+          <figure class="device-shot ipad-shot reveal">
+            <img src="assets/ipad_en.png" alt="ChronosMap on iPad" data-shot="ipad" data-i18n-attr="alt:home.gallery.ipadAlt" loading="lazy" decoding="async">
+            <figcaption data-i18n="home.gallery.ipad">iPad</figcaption>
+          </figure>
+          <figure class="device-shot ios-shot reveal">
+            <img src="assets/ios_en.png" alt="ChronosMap on iPhone" data-shot="ios" data-i18n-attr="alt:home.gallery.iosAlt" loading="lazy" decoding="async">
+            <figcaption data-i18n="home.gallery.ios">iPhone</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section photo-story">
+        <div class="photo-copy">
+          <h2 class="reveal" data-i18n="home.photos.title">Turn your photo library into a travel map.</h2>
+          <p class="section-lead reveal" data-i18n="home.photos.lead">Choose photos with location metadata, and ChronosMap creates trajectory points from their real coordinates and capture times. Each photo becomes a memory node for trips, city walks, field work, or personal timelines.</p>
+          <ul class="list">
+            <li class="reveal" data-i18n="home.photos.point1">Uses the actual location recorded in each photo and does not merge photos with different coordinates.</li>
+            <li class="reveal" data-i18n="home.photos.point2">Photos become part of the trajectory point content, so you can open richer image and text records later.</li>
+            <li class="reveal" data-i18n="home.photos.point3">Your photo data is chosen and saved by you, making it suitable for private travel maps or shareable story maps.</li>
+          </ul>
+        </div>
+        <div class="journey-visual reveal" aria-label="Photo journey illustration">
+          <div class="phone-frame">
+            <div class="photo-tile tile-one"></div>
+            <div class="photo-tile tile-two"></div>
+            <div class="photo-tile tile-three"></div>
+            <svg class="route-line" viewBox="0 0 260 420" aria-hidden="true">
+              <path d="M64 342 C110 302 62 236 132 206 C197 178 148 110 202 70" />
+              <circle cx="64" cy="342" r="9" />
+              <circle cx="132" cy="206" r="9" />
+              <circle cx="202" cy="70" r="9" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section showcase">
+        <div>
+          <h2 class="reveal" data-i18n="home.sample.title">A built-in sample map.</h2>
+          <p class="section-lead reveal" data-i18n="home.sample.lead">The app includes a Tang Dynasty of China sample map that shows how people, events, and routes can be organized around time and place. You can also start from a blank map.</p>
+          <ul class="list">
+            <li class="reveal" data-i18n="home.sample.point1">Supports sample maps and user-created maps.</li>
+            <li class="reveal" data-i18n="home.sample.point2">Open from files, save as, import source data, and export source data.</li>
+            <li class="reveal" data-i18n="home.sample.point3">Map data stays local and is managed and shared by you.</li>
+          </ul>
+        </div>
+        <div class="map-image reveal">
+          <img src="assets/ipad_en.png" alt="ChronosMap sample map on iPad" data-shot="ipad" data-i18n-attr="alt:home.sample.imageAlt" loading="lazy" decoding="async">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>VividMap</strong>
+      <div class="footer-links">
+        <a href="chronosmap.html">ChronosMap</a>
+        <a href="yunji.html" data-i18n="brand.yunji">yunji</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+      </div>
+      <a class="icp-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">沪ICP备2026029862号-1A</a>
+    </footer>
+  </div>
+</body>
+</html>
