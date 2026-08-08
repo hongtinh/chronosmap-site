@@ -799,6 +799,6 @@ function setupLanguageSelects(language) {
   });
 }
 
-// 合并站（VividMap）在 studio-i18n.js 中注入 studio / 云迹 / 品牌键后再统一应用语言，
+// 合并站（VividMap）在 studio-i18n.js 中注入 studio / 鲸游 / 品牌键后再统一应用语言，
 // 因此这里不自动应用，仅暴露内部接口供其后调用，避免首屏闪现未翻译键名。
 window.__cm = { translations, setupLanguageSelects, applyLanguage, detectLanguage };

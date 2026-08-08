@@ -1,4 +1,4 @@
-/* VividMap 合并站：在 chronosmap 的 site.js 之上注入工作室首页、云迹页、
+/* VividMap 合并站：在 chronosmap 的 site.js 之上注入工作室首页、鲸游页、
    品牌名与工作室通用隐私/支持文案。chronosmap 原有翻译表核心未改，新增键在此
    用 Object.assign 叠加，覆盖站点提供的全部语言，最后统一应用语言。 */
 (function () {
@@ -784,6 +784,17 @@
 
   Object.keys(L).forEach(function (lang) {
     if (t[lang]) Object.assign(t[lang], L[lang]);
+  });
+
+  // 保留旧的翻译键名，避免破坏现有页面绑定；对外显示统一使用新品牌名。
+  Object.keys(t).forEach(function (lang) {
+    if (!t[lang]) return;
+    Object.keys(t[lang]).forEach(function (key) {
+      if (typeof t[lang][key] !== "string") return;
+      t[lang][key] = t[lang][key]
+        .replace(/\byunji\b/gi, "鲸游")
+        .replace(/云迹|雲跡|운적/g, "鲸游");
+    });
   });
 
   var lang = cm.detectLanguage();

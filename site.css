@@ -599,7 +599,7 @@ a:hover {
 }
 
 /* ============================================================
-   VividMap 合并站：工作室首页 / 云迹页 / 滚动显现 / 微交互
+   VividMap 合并站：工作室首页 / 鲸游页 / 滚动显现 / 微交互
    （沿用 ChronosMap 的浅色蓝调语言，仅在其上扩展）
    ============================================================ */
 
@@ -754,7 +754,7 @@ a:hover {
   gap: 18px;
 }
 
-/* 云迹功能区的 2 列网格（独立类，窄屏可折叠；不可用内联样式，否则压过媒体查询） */
+/* 鲸游功能区的 2 列网格（独立类，窄屏可折叠；不可用内联样式，否则压过媒体查询） */
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -779,7 +779,7 @@ a:hover {
 }
 .value-card p { margin: 0; color: var(--muted); }
 
-/* 云迹页设备行（三张 iPhone 截图） */
+/* 鲸游页设备行（三张 iPhone 截图） */
 .device-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -790,7 +790,7 @@ a:hover {
 .device-row .device-shot { aspect-ratio: 0.47; }
 .device-row .device-shot img { object-fit: cover; object-position: top; }
 
-/* 云迹 hero 图标舞台复用 chronosmap .icon-stage，仅换图 */
+/* 鲸游 hero 图标舞台复用 chronosmap .icon-stage，仅换图 */
 
 @media (max-width: 820px) {
   .portal-grid, .values-grid, .device-row, .grid-2 { grid-template-columns: 1fr; }
