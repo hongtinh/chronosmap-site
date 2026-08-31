@@ -779,7 +779,9 @@ function applyLanguage(language) {
 
   const screenshotLocale = language === "zh-Hans" || language === "zh-Hant" ? "zh" : "en";
   document.querySelectorAll("[data-shot]").forEach((image) => {
-    image.src = `assets/${image.dataset.shot}_${screenshotLocale}.png`;
+    const assetBase = `assets/${image.dataset.shot}_${screenshotLocale}`;
+    image.src = `${assetBase}-960.webp`;
+    image.srcset = `${assetBase}-960.webp 960w, ${assetBase}-1600.webp 1600w`;
   });
 
   localStorage.setItem("chronosmap.site.language", language);
