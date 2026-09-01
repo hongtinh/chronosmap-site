@@ -789,11 +789,12 @@
   // 保留旧的翻译键名，避免破坏现有页面绑定；对外显示统一使用新品牌名。
   Object.keys(t).forEach(function (lang) {
     if (!t[lang]) return;
+    var brandName = lang === "zh-Hans" || lang === "zh-Hant" ? "鲸游" : "WhaleWay";
     Object.keys(t[lang]).forEach(function (key) {
       if (typeof t[lang][key] !== "string") return;
       t[lang][key] = t[lang][key]
-        .replace(/\byunji\b/gi, "鲸游")
-        .replace(/云迹|雲跡|운적/g, "鲸游");
+        .replace(/\byunji\b/gi, brandName)
+        .replace(/云迹|雲跡|운적|鲸游/g, brandName);
     });
   });
 
