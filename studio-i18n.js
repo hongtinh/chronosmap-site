@@ -786,14 +786,16 @@
     if (t[lang]) Object.assign(t[lang], L[lang]);
   });
 
-  // 保留旧的翻译键名，避免破坏现有页面绑定；对外显示统一使用新品牌名。
+  // 保留旧的翻译键名，避免破坏现有页面绑定；对外按语言统一使用新品牌名。
   Object.keys(t).forEach(function (lang) {
     if (!t[lang]) return;
-    var brandName = lang === "zh-Hans" || lang === "zh-Hant" ? "鲸游" : "WhaleWay";
+    var isChinese = lang === "zh-Hans" || lang === "zh-Hant";
+    var brandName = isChinese ? "鲸游" : "WhaleWay";
+    t[lang]["brand.yunji"] = brandName;
     Object.keys(t[lang]).forEach(function (key) {
       if (typeof t[lang][key] !== "string") return;
       t[lang][key] = t[lang][key]
-        .replace(/\byunji\b/gi, brandName)
+        .replace(/\b(?:yunji|jingyou)\b/gi, brandName)
         .replace(/云迹|雲跡|운적|鲸游/g, brandName);
     });
   });
